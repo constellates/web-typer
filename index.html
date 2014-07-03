@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>microsoft-office prototype</title>
+    <link rel="stylesheet" href="app/css/main.css">
+    <script src="app/libs/angular.js"></script>
+    <script src="app/libs/angular-ui-router.js"></script>
+    <script src="app/app.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+
+    <nav>
+        <div ng-click="addFile();">add file</div>
+        <div class="file" ng-repeat="file in files track by $index">
+            <a ui-sref="file({id: file})">{{file}}</a><span ng-click="deleteFile($index, file)">x</span>
+        </div>
+    </nav>
+
+    <!-- view injection point -->
+    <div id="view-container" ui-view autoscroll="true">
+
+        <!-- all templates get loaded in here -->
+
+    </div>
+
+
+</body>
+</html>
