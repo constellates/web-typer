@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+     v2.0 | 20110126
+     License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  cursor: pointer; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: helvetica;
+  font-weight: lighter;
+  color: #FFF;
+  height: 100%; }
+
+#view-container {
+  height: 100%; }
+
+/*Animation Prefs*/
+@-webkit-keyframes pulse {
+  0% {
+    background-color: #418EB4; }
+
+  25% {
+    background-color: #5E8F3E; }
+
+  50% {
+    background-color: #CFA154; }
+
+  75% {
+    background-color: #B2493E; }
+
+  100% {
+    background-color: #414789; } }
+
+/*Body Styles*/
+body {
+  -webkit-animation: pulse 80s infinite alternate;
+  background-color: #45CEEF; }
+
+nav {
+  border: 2px solid #FFF;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  height: 90%; }
+  nav div {
+    border: 2px solid #FFF;
+    padding: 10px; }
+  nav .file {
+    color: #FFF;
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    border: none;
+    padding: none; }
+    nav .file a {
+      color: #FFF;
+      font-size: 20px; }
+    nav .file span {
+      margin-left: 15px;
+      border: 1px solid #FFF;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 0px; }
+
+textarea {
+  width: 80%;
+  border: 2px solid #FFF;
+  height: 90%;
+  background: none;
+  margin: 10px;
+  color: #FFF;
+  font-size: 18px;
+  outline: none;
+  padding: 10px; }
+
+h1 {
+  text-align: center;
+  padding-top: 10%;
+  font-size: 50px; }
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  width: 60%;
+  margin: 20px 15% 0px 25%; }
